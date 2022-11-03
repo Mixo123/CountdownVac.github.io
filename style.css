@@ -39,3 +39,18 @@ h2 {
     font-size: 3rem;
     margin: 40px;
 }
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .day, .hours, .minutes, .seconds, .month, .years {
+        font-size: 1.5rem;
+    }
+    .countdown {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+}
