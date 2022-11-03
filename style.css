@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#text {
+    padding-bottom: 20px;
+}
+
+.coming-soon {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(255,255,185,1) 0%, rgba(168,207,255,1) 100%);
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-bottom: 40px;
+    background-color: #F1F1F1;
+}
+
+.day, .hours, .minutes, .seconds, .month, .years {
+    font-size: 3rem;
+    margin: 40px;
+}
