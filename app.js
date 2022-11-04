@@ -18,11 +18,11 @@ const main = () => {
     const textSeconds = Math.floor((gap % minute) / second);
     
     document.querySelector('.years').innerHTML = textYears;
-    document.querySelector('.month').innerHTML = textMonth;
-    document.querySelector('.day').innerHTML = textDay;
-    document.querySelector('.hours').innerHTML = textHour;
-    document.querySelector('.minutes').innerHTML = textMinutes;
-    document.querySelector('.seconds').innerHTML = textSeconds;
+    document.querySelector('.month').innerHTML = `${textMonth < 10 ? '0' : ''}${textMonth}`;
+    document.querySelector('.day').innerHTML = `${textDay < 10 ? '0' : ''}${textDay}`;
+    document.querySelector('.hours').innerHTML = `${textHour < 10 ? '0' : ''}${textHour}`;
+    document.querySelector('.minutes').innerHTML = `${textMinutes < 10 ? '0' : ''}${textMinutes}`;
+    document.querySelector('.seconds').innerHTML = `${textSeconds < 10 ? '0' : ''}${textSeconds}`;
 };
 
 setInterval(main, 1000)
